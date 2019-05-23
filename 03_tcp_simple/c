@@ -1,0 +1,7 @@
+#!/bin/sh
+
+
+rm tcp_client
+gcc -o tcp_client tcp_client.c -lxnet
+
+./tcp_client 158.129.0.39 12345

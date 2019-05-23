@@ -1,0 +1,12 @@
+ls -a /var/adm/sa
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa08
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa09
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa10
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa11
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa12
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa13
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa14
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa15
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa16
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa17
+sar -s 08:00 -e 12:00 -f /var/adm/sa/sa18

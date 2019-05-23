@@ -1,0 +1,25 @@
+#!/bin/sh
+if [ $# -eq 2 ] 
+then 
+   if [ -d $1 ] 
+   then
+   if [ -f $2 ] 
+     then
+     mv $2 $1
+     exc=$?
+       if [ ! $exc -eq 0 ]
+        then 
+        cp $2 $1/$2
+         exc=$?
+          if [ ! $exc -eq 0 ]
+             then
+             echo "Opercaija su failu nepavyko"
+             exit 1 
+          fi
+        fi
+    fi
+    fi
+else
+  echo "Blogi duomenys"
+  exit 1
+fi

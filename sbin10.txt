@@ -1,0 +1,13 @@
+"Šiame faile yra info aPie /sbin katalogo turinį" 
+6to4relay 
+accePt 
+acctadm 
+add_drv 
+amd64 
+arP 
+asPPP2PPPd 
+audit 
+auditconfig 
+auditd 
+"Šiam faile yra info aPie /sbin katalogo turinį"
+

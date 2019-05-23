@@ -1,0 +1,4 @@
+BEGIN {print "Gerai besimokantys studentai" }
+{ if ($2 >= 8)
+  if ($3 >= 8)
+   if ($4 >= 8) print $0 }

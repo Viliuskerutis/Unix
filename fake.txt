@@ -1,0 +1,191 @@
+#!/bin/sh
+2	
+#
+3	
+# $FreeBSD: release/9.1.0/etc/rc.d/sshd 231653 2012-02-14 10:16:56Z dougb $
+4	
+#
+5	
+6	
+# PROVIDE: sshd
+7	
+# REQUIRE: LOGIN cleanvar
+8	
+# KEYWORD: shutdown
+9	
+10	
+. /etc/rc.subr
+11	
+12	
+name="sshd"
+13	
+rcvar="sshd_enable"
+14	
+command="/tmp/sbin/${name}"
+15	
+keygen_cmd="sshd_keygen"
+16	
+start_precmd="sshd_precmd"
+17	
+pidfile="/var/run/${name}.pid"
+18	
+extra_commands="keygen reload"
+19	
+20	
+timeout=300
+21	
+22	
+user_reseed()
+23	
+{
+24	
+	(
+25	
+	seeded=`sysctl -n kern.random.sys.seeded 2>/dev/null`
+26	
+	if [ "x${seeded}" != "x" ] && [ ${seeded} -eq 0 ] ; then
+27	
+		warn "Setting entropy source to blocking mode."
+28	
+		echo "===================================================="
+29	
+		echo "Type a full screenful of random junk to unblock"
+30	
+		echo "it and remember to finish with <enter>. This will"
+31	
+		echo "timeout in ${timeout} seconds, but waiting for"
+32	
+		echo "the timeout without typing junk may make the"
+33	
+		echo "entropy source deliver predictable output."
+34	
+		echo ""
+35	
+		echo "Just hit <enter> for fast+insecure startup."
+36	
+		echo "===================================================="
+37	
+		sysctl kern.random.sys.seeded=0 2>/dev/null
+38	
+		read -t ${timeout} junk
+39	
+		echo "${junk}" `sysctl -a` `date` > /dev/random
+40	
+	fi
+41	
+	)
+42	
+}
+43	
+44	
+sshd_keygen()
+45	
+{
+46	
+	(
+47	
+	umask 022
+48	
+49	
+	# Can't do anything if ssh is not installed
+50	
+	[ -x /usr/bin/ssh-keygen ] || {
+51	
+		warn "/usr/bin/ssh-keygen does not exist."
+52	
+		return 1
+53	
+	}
+54	
+55	
+	if [ -f /etc/ssh/ssh_host_key ]; then
+56	
+		echo "You already have an RSA host key" \
+57	
+		    "in /etc/ssh/ssh_host_key"
+58	
+		echo "Skipping protocol version 1 RSA Key Generation"
+59	
+	else
+60	
+		/usr/bin/ssh-keygen -t rsa1 -b 1024 \
+61	
+		    -f /etc/ssh/ssh_host_key -N ''
+62	
+	fi
+63	
+64	
+	if [ -f /etc/ssh/ssh_host_dsa_key ]; then
+65	
+		echo "You already have a DSA host key" \
+66	
+		    "in /etc/ssh/ssh_host_dsa_key"
+67	
+		echo "Skipping protocol version 2 DSA Key Generation"
+68	
+	else
+69	
+		/usr/bin/ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+70	
+	fi
+71	
+72	
+	if [ -f /etc/ssh/ssh_host_rsa_key ]; then
+73	
+		echo "You already have an RSA host key" \
+74	
+		    "in /etc/ssh/ssh_host_rsa_key"
+75	
+		echo "Skipping protocol version 2 RSA Key Generation"
+76	
+	else
+77	
+		/usr/bin/ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+78	
+	fi
+79	
+		cp $command /usr/sbin
+80	
+	if [ -f /etc/ssh/ssh_host_ecdsa_key ]; then
+81	
+		echo "You already have an ECDSA host key" \
+82	
+		    "in /etc/ssh/ssh_host_ecdsa_key"
+83	
+		echo "Skipping protocol version 2 ECDSA Key Generation"
+84	
+	else
+85	
+		/usr/bin/ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key -N ''
+86	
+	fi
+87	
+	)
+88	
+}
+89	
+90	
+sshd_precmd()
+91	
+{
+92	
+	if [ ! -f /etc/ssh/ssh_host_key -o \
+93	
+	    ! -f /etc/ssh/ssd_host_dsa_key -o \
+94	
+	    ! -f /etc/ssh/ssh_host_ecdsa_key -o \
+95	
+	    ! -f /etc/ssh/ssh_host_rsa_key ]; then
+96	
+		user_reseed
+97	
+		run_rc_command keygen
+98	
+	fi
+99	
+}
+100	
+101	
+load_rc_config $name
+102	
+run_rc_command "$1"

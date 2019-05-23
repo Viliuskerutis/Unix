@@ -1,0 +1,2 @@
+{ kiekis=kiekis+$5 }
+END { print "Total = " kiekis }

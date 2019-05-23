@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "Iveskite skaiciu: (jei ivesite daugiau nei viena skaiciu bus imamas pirmasis)"
+read a b
+var=0
+until [ $var = $a ]
+do
+echo $var
+var=$(( $var + 1 ))
+done
+echo $a

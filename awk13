@@ -1,0 +1,3 @@
+BEGIN { print "\n Informacija apie prekes, kurios visos yra parduotos: \n"}
+{ if($2 == $3) print $0 }
+END { print "\n" }

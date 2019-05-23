@@ -1,0 +1,36 @@
+#!/bin/sh
+var="a"
+echo "Iveskite savaites dienos skaiciu arba lietuviska jos pavadinima: (q arba Q, jei noresite baigti) "
+while true
+do
+read var
+case $var in 
+    [1] | [pP][iI][rR][mM][aA][dD][iI][eE][nN][iI][sS] )
+          echo "Monday"
+          ;;
+    [2] | [aA][nN][tT][rR][aA][dD][iI][eE][nN][iI][sS] )
+          echo "Tuesday"
+          ;;
+    [3] | [tT][rR][eE][cC][iI][aA][dD][iI][eE][nN][iI][sS] )
+          echo "Wednesday"
+          ;;
+    [4] | [kK][eE][tT][vV][iI][rR][tT][aA][dD][iI][eE][nN][iI][sS] )
+          echo "Thursday"
+          ;;
+    [5] | [pP][eE][nN][kK][tT][aA][dD][iI][eE][nN][iI][sS] )
+          echo "Friday"
+          ;;
+    [6] | [sSšŠ][eE][sSšŠ][tT][aA][dD][iI][eE][nN][iI][sS] )
+          echo "Saturday"
+          ;;
+    [7] | [sS][eE][kK][mM][aA][dD][iI][eE][nN][iI][sS] )
+          echo "Sunday"
+          ;;
+    [qQ] )
+         exit 0
+         ;;
+      *) echo "Blogi duomenys"
+         exit 1
+         ;;
+esac
+done

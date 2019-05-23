@@ -1,0 +1,14 @@
+#!/bin/sh
+echo "Iveskite savo gimimo metus: "
+read s1
+echo "Iveskite savo gimimo menesi: "
+read s2
+echo "Iveskite savo gimimo diena: "
+read s3
+echo "Jusu gimimo data: " $s1 "-" $s2 "-" $s3
+r1=$((s1/s2))
+r2=$((s1/s3))
+r3=$((s1%s2))
+r4=$((s1%s3))
+echo "Dalybos rezultatu suma: " $((r1+r2))
+echo "Dalybos liekanu sandauga: " $((r3*r4))

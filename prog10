@@ -1,0 +1,14 @@
+#!/bin/sh
+while true
+do
+ for arg in $*; do
+   for u in `users`; do
+   if [ $arg = $u ]; then
+   echo "Vartotojas $arg prisijunges."
+   echo `id $arg`
+   exit 0
+   fi
+   done
+ done
+wait 60
+done

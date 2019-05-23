@@ -1,0 +1,3 @@
+BEGIN { print "\n Maksimalios stulpeliu reiksmes: \n"; }
+{ if ($1 > m1) m1=$1; if ($2 > m2) m2=$2; if ($3 > m3) m3=$3; }
+END { print "Pirmo stulpelio: ", m1; print "Antro stulpelio: ", m2; print "Trecio stulpelio: ", m3 }

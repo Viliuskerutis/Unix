@@ -1,0 +1,16 @@
+for i in $*
+do
+if [ -r $i ]
+then
+var="skaitomas"
+else
+var="neskaitomas"
+fi
+if [ -x $i ]
+then
+var1="vykdomas"
+else
+var1="nevykdomas"
+fi
+echo "failas: $i >> $var/$var1"
+done

@@ -1,0 +1,37 @@
+#!/bin/sh
+if [ $# -eq 0 ] ;
+then
+    echo "Programa paleista be argumentu"
+    exit 1
+else
+    echo "Argumentu skaicius: $#"
+    echo "Argumentu sarasas: $*"
+fi
+if [ $# -eq 1 ] ;
+then 
+   if [ -d $1 ] ;
+   then
+      cd $1
+      for i in * ;
+      do
+      echo $i
+      done
+   elif [ -r $1 ] ;
+     then
+     echo "Ar norite pamatyti failo turini ?(T/N)"
+     read answ
+     case $answ in
+          [tT] | [tT][aA][iI][pP] )
+          cat $1
+          exit 0
+          ;;
+          [nN] | [nN][eE] )
+          echo "Failo turinys nebus isvedamas"
+          exit 0
+          ;;
+          *) echo "Blogas duomenys"
+             exit 255
+          ;;
+     esac
+   fi
+fi

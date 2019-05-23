@@ -1,0 +1,6 @@
+#!/bin/sh
+until [ $# = 0 ]
+do
+  echo $*
+  shift
+done

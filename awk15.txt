@@ -1,0 +1,1 @@
+awk -F : '{if ( $3 ~ /62. 40.103.217/ ) { p=p+$5; b=b+$6 } } END { print "Paketai: " p, "Baitai: " b } ' /var/lab/lab2/rusiuot/srautai.txt

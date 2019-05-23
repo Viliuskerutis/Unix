@@ -1,0 +1,548 @@
+6to4relay
+accept
+acctadm
+add_drv
+amd64
+arp
+asppp2pppd
+audit
+auditconfig
+auditd
+auditrecord
+auditreduce
+auditstat
+audlinks
+automount
+autopush
+avahi-daemon-bridge-dsd
+beadm
+biosdev
+bonobo-activation-sysconf
+bootadm
+bootconfchk
+cfgadm
+check-hostname
+check-permissions
+chroot
+clear_locks
+clinfo
+clri
+consadm
+consadmd
+cpustat
+croinfo
+cron
+cryptoadm
+cupsaccept
+cupsaddsmb
+cupsctl
+cupsd
+cupsdisable
+cupsenable
+cupsfilter
+cupsreject
+datadm
+dcopy
+devfsadm
+devinfo
+devlinks
+devnm
+devprop
+df
+dfmounts
+dfshares
+dhcpagent
+dhcpconfig
+dhcpinfo
+dhcpmgr
+dhtadm
+dig
+diskinfo
+disks
+dispadmin
+dladm
+dlmgmtd
+dlstat
+dmesg
+dnssec-dsfromkey
+dnssec-keyfromlabel
+dnssec-keygen
+dnssec-signzone
+drvconfig
+dtrace
+dump2psl.pl
+dump2slvl.pl
+dumpadm
+editmap
+edquota
+eeprom
+etrn
+exportfs
+fcadm
+fcinfo
+fdisk
+ff
+fiocompress
+flowadm
+flowstat
+fmadm
+fmdump
+fmstat
+fmthard
+format
+fsck
+fsdb
+fsirand
+fssnap
+fstyp
+ftprestart
+ftpscrub
+ftpshut
+fuser
+fwflash
+get_manifest
+getdevpolicy
+getmajor
+gettable
+groupadd
+groupdel
+groupmod
+growfs
+grpck
+gsscred
+hal-device
+hal-fdi-validate
+hal-find-by-capability
+hal-find-by-property
+hal-get-property
+hal-set-property
+halt
+host
+hostconfig
+hotplug
+htable
+i86
+ibaddr
+ibcheckerrors
+ibcheckerrs
+ibchecknet
+ibchecknode
+ibcheckport
+ibcheckportstate
+ibcheckportwidth
+ibcheckstate
+ibcheckwidth
+ibclearcounters
+ibclearerrors
+ibdatacounters
+ibdatacounts
+ibdiagnet
+ibdiscover.pl
+ibhosts
+ibis
+iblinkinfo
+iblinkinfo.pl
+ibnetdiscover
+ibnodes
+ibping
+ibportstate
+ibprintca.pl
+ibprintrt.pl
+ibprintswitch.pl
+ibqueryerrors
+ibqueryerrors.pl
+ibroute
+ibrouters
+ibstat
+ibstatus
+ibswitches
+ibswportwatch.pl
+ibsysstat
+ibtracert
+idmap
+if_mpadm
+ifconfig
+ifparse
+ikeadm
+ikecert
+in.comsat
+in.fingerd
+in.mpathd
+in.rdisc
+in.rexecd
+in.rlogind
+in.routed
+in.rshd
+in.rwhod
+in.talkd
+in.telnetd
+in.tftpd
+inetadm
+inetconv
+inetd
+init
+install
+installadm
+installf
+installgrub
+intrstat
+ipaddrsel
+ipadm
+ipf
+ipfs
+ipfstat
+ipmitool
+ipmon
+ipmpstat
+ipnat
+ippool
+ipsecalgs
+ipsecconf
+ipseckey
+iscsiadm
+jsh
+keyserv
+killall
+ksslcfg
+labelit
+ldapaddent
+ldapclient
+link
+local-auth_genpassword.sh
+local-auth_useradd.sh
+local-auth_userdel.sh
+local-auth_userfreeze.sh
+locator
+lockfs
+lockstat
+lofiadm
+logadm
+lpadmin
+lpc
+lpinfo
+lpmove
+lshal
+luxadm
+makedbm
+makemap
+mdmonitord
+medstat
+metaclear
+metadb
+metadetach
+metadevadm
+metahs
+metaimport
+metainit
+metaoffline
+metaonline
+metaparam
+metarecover
+metarename
+metareplace
+metaset
+metassist
+metastat
+metasync
+metattach
+mkfile
+mkfs
+mknod
+modinfo
+modload
+modunload
+mount
+mountall
+mpathadm
+msgid
+mvdir
+named
+named-checkconf
+named-checkzone
+named-compilezone
+ncheck
+ndd
+netadm
+netcfg
+netservices
+netstrategy
+newaliases
+newfs
+newkey
+nfsref
+nscd
+nscfg
+nsdb-list
+nsdb-nces
+nsdb-resolve-fsn
+nsdb-update-nci
+nsdbparams
+nslookup
+nsupdate
+ntp-keygen
+ntpdate
+ntpdc
+ntpq
+ntptime
+ntptrace
+omshell
+pbind
+perfquery
+pfsh
+ping
+pkgadd
+pkgask
+pkgchk
+pkgrm
+plockstat
+pntadm
+polkit-is-privileged
+pooladm
+poolbind
+poolcfg
+ports
+poweradm
+poweroff
+praudit
+projadd
+projdel
+projmod
+prtconf
+prtdiag
+prtpicl
+prtvtoc
+psradm
+psrinfo
+psrset
+pwck
+pwconv
+quot
+quota
+quotacheck
+quotaoff
+quotaon
+ramdiskadm
+rc0
+rc1
+rc2
+rc3
+rc5
+rc6
+rcS
+rctladm
+reboot
+reject
+rem_drv
+removef
+repquota
+rmmount
+rmt
+rndc
+rndc-confgen
+roleadd
+roledel
+rolemod
+root_archive
+route
+routeadm
+rpc.mdcommd
+rpc.metad
+rpc.metamedd
+rpc.metamhd
+rpc.rexd
+rpcbind
+rtc
+rtquery
+rwall
+safe_finger
+saquery
+sar
+sbdadm
+sendmail
+set_nodedesc.sh
+setmnt
+sh
+share
+shareall
+sharectl
+showmount
+shutdown
+slapacl
+slapadd
+slapauth
+slapcat
+slapdn
+slapindex
+slappasswd
+slapschema
+slaptest
+smbadm
+smbios
+smbstat
+sminfo
+smpdump
+smpquery
+snmpd
+snmptrapd
+snoop
+soconfig
+solaris_set_nodedesc
+sppptun
+spray
+stmfadm
+stmsboot
+strace
+strclean
+strerr
+sttydefs
+su
+sulogin
+suriadm
+svcadm
+svccfg
+swap
+swapadd
+sxadm
+sync
+syncinit
+syncloop
+syncstat
+sysconfig
+sysdef
+syseventadm
+syslogd
+tapes
+tar
+tcpd
+tcpdchk
+tcpdmatch
+tcpdump
+traceroute
+trapstat
+try-from
+ttymon
+tunefs
+tzreload
+uadmin
+ucodeadm
+ufsdump
+ufsrestore
+umount
+umountall
+uname
+unlink
+unshare
+unshareall
+update_drv
+useradd
+userdel
+usermod
+vbiosd
+visudo
+vmtoolsd
+vmware-checkvm
+vmware-rpctool
+volcopy
+wall
+wanbootutil
+whodo
+wusbadm
+xntpdc
+ypalias
+ypinit
+yppoll
+ypset
+zdb
+zdump
+zfs
+zic
+zlogin
+zoneadm
+zonecfg
+zonename
+zonep2vchk
+zpool
+zstreamdump
+	a bit - truputi
+	a few - keli
+	a lot - daug
+	abandoned - apleistas
+	abase - zeminti
+	abash - sugedinti
+	abbreviate - trumpinti
+	abbreviation - santrumpa
+	abdicate - atsisakyti 
+	abduction - pagrobimas
+	ability - geba
+	abject - nusizemines, apgailetinas
+	ablaze - liepsnoti
+	able - galintis
+	abnormal - nenormalus
+	aborigine - aborigenas
+	abort - nutraukti
+	about - apie
+	about how - apie, kaip 
+	above - virs
+	above-board  - saziningai
+	above-named  - auksciau minetas
+	abracadabra - burtazodis
+	abrasion - nutrynimas
+	abroad - uzsienyje
+	absence - nebuvimas
+	absolute - absoliutus
+	absolute address -  absoliutusis adresas
+	absorb - sugerti
+	abnormal termination -  avarine baigtis
+	academy - akademija
+	accept - priimti
+	access authorization -  prieigos sankcionavimas
+	access control list -  prieigos teisiu sarasas
+	access control -  prieigos kontrole
+	access right(s) -  prieigos teise
+	access time -  kreipties trukme
+	accessory -  (nusikaltimo) bendrininkas, dalyvis, reikmenys
+	accuracy - tikslumas, punktualumas
+	acknowledge - pripazinti,patvirtinti gavima
+	across - skersai
+	act - veikti
+	ad hoc - lot. specialus, siam tikslui 
+	addition - pridejimas, priedas, papildymas
+	address bus -  adresu magistrale
+	address mapping table -  adresu atitikmenu lentele
+	address mask -  adreso kauke
+	alert window -  ispejimo langas
+ 	alert -  ispejimas
+	alias -  alternatyvusis vardas
+	allocation -  isdestymas
+	anonymous logon -  anoniminis prisijungimas
+	append -  papildyti
+	application programmer -  taikomuju programu programuotojas
+ 	application programming interface -  programu sasaja
+ 	application sharing -  programu bendrinimas
+ 	application software  [taikomoji] programine iranga
+	apply filter -  filtruoti
+	apply -  (pri)taikyti
+	approach -  metodas
+	approve -  patvirtinti
+	approximate value -  apytiksle reiksme
+	area -  sritis
+	argument separator -  argumentu skirtukas
+	argument -  argumentas
+ 	arithmetic constant -  skaitine konstanta
+	arithmetic data -  aritmetiniai duomenys
+ 	arithmetic expression -  aritmetinis reiskinys
+ 	arithmetic logic unit, ALU -  aritmetinis-loginis itaisas
+ 	arithmetic operation -  aritmetine operacija
+	assembly language coding -  programavimas asemblerio kalba
+	assembly language	 asemblerio kalba, asembleris
+ 	assembly-control statement -  asemblerio direktyva
+	assertion -  teiginys
+	assessment -  ivertinimas
+	assign - paskirti
+	assistance -  pagalba
+	assistant-  pagelbiklis
+ 	associate -  susieti
+ 	associated view -  susietasis rodinys
+	associative memory -  asociatyvioji atmintis
+	associative operation -  asociatyvioji operacija
+	associative search -  asociatyvioji paieska

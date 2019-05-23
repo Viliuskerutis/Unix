@@ -1,0 +1,8 @@
+#!/bin/sh
+echo iveskite savo varda
+read vardas
+echo iveskite vartotojo numeri
+read numeris
+echo iveskite grupe
+read grupe
+echo "vartotojas: " $vardas $numeris $grupe

@@ -1,0 +1,76 @@
+load averages:  3.97,  2.16,  1.09;               up 11+05:38:57       18:00:20
+299 processes: 251 sleeping, 5 running, 39 stopped, 4 on cpu
+CPU states:  0.0% idle, 93.8% user,  6.2% kernel,  0.0% iowait,  0.0% swap
+Kernel: 630 ctxsw, 5886 trap, 886 intr, 30196 syscall, 3 fork, 5485 flt
+Memory: 4096M phys mem, 1118M free mem, 1024M total swap, 1024M free swap
+
+   PID USERNAME NLWP PRI NICE  SIZE   RES STATE    TIME    CPU COMMAND
+ 20749 vadkoz      1   0    0 1692K 1064K run      0:34 18.65% rlimit_cpu
+ 20751 vadkoz      1   0    0 1692K 1064K run      0:37 14.16% rlimit_cpu
+ 20734 kazbus      1  10    0 1692K 1064K run      0:21 13.68% rlimit_cpu
+ 20750 vadkoz      1  11    0 1692K 1064K cpu/2    0:36 12.97% rlimit_cpu
+ 20755 ievska1     1   1    0 1692K 1064K cpu/0    0:23 11.15% rlimit_cpu
+ 20754 ievska1     1   1    0 1692K 1064K run      0:23 10.12% rlimit_cpu
+ 20756 ievska1     1  11    0 1692K 1064K run      0:19  7.60% rlimit_cpu
+  1140 root        1  19    0   27M   11M cpu/1  399:34  7.11% vmtoolsd
+ 20797 marjur7     1  52    0   10M 2816K sleep    0:00  1.10% bash
+ 20796 ignlun      1  59    0 9096K 1688K sleep    0:00  0.62% less
+ 20790 marjur7     1  59    0   18M 4924K sleep    0:00  0.19% sshd
+ 20794 vilker3     1   8   17 5008K 3508K cpu/3    0:00  0.15% top
+ 20789 root        1  59    0   16M 3668K sleep    0:00  0.10% sshd
+ 20793 matgri      1  59    0 4896K 3248K sleep    0:00  0.09% top
+ 20597 ievska1     1  59    0 5488K 3836K sleep    0:00  0.08% top
+ 20594 vadkoz      1  59    0 5488K 3836K sleep    0:00  0.08% top
+ 20795 ignlun      1  59    0 8748K 1592K sleep    0:00  0.07% man
+    84 daemon      4  59    0   17M 3624K sleep    1:30  0.05% kcfd
+   445 root       36  59    0   18M 7464K sleep    1:51  0.05% nscd
+ 19254 ricsim      1  49    0   10M 2836K sleep    0:00  0.02% bash
+ 19251 ricsim      1  59    0   18M 4924K sleep    0:00  0.01% sshd
+ 19267 ignlun      1  59    0   10M 2852K sleep    0:00  0.01% bash
+ 20321 kazbus      1  59    0   18M 4924K sleep    0:00  0.01% sshd
+    13 root       21  59    0   20M 5504K sleep    0:50  0.01% svc.configd
+ 19264 ignlun      1  59    0   18M 4940K sleep    0:00  0.01% sshd
+ 19075 simpas2     1  59    0   18M 4924K sleep    0:00  0.00% sshd
+ 20323 kazbus      1  59    0   10M 2840K sleep    0:00  0.00% bash
+ 18912 matgri      1  59    0   18M 4924K sleep    0:00  0.00% sshd
+ 19086 simpas2     1  59    0   10M 2824K sleep    0:00  0.00% bash
+ 18654 krirud      1  59    0   18M 4940K sleep    0:00  0.00% sshd
+
+load averages:  4.25,  2.25,  1.13;               up 11+05:39:02       18:00:25
+298 processes: 251 sleeping, 4 running, 39 stopped, 4 on cpu
+CPU states:  0.0% idle, 97.9% user,  2.1% kernel,  0.0% iowait,  0.0% swap
+Kernel: 539 ctxsw, 953 trap, 851 intr, 4482 syscall, 641 flt
+Memory: 4096M phys mem, 1119M free mem, 1024M total swap, 1024M free swap
+
+   PID USERNAME NLWP PRI NICE  SIZE   RES STATE    TIME    CPU COMMAND
+ 20751 vadkoz      1   0    0 1692K 1064K run      0:40 18.27% rlimit_cpu
+ 20749 vadkoz      1   1    0 1692K 1064K run      0:37 15.85% rlimit_cpu
+ 20750 vadkoz      1   0    0 1692K 1064K cpu/3    0:39 14.36% rlimit_cpu
+ 20756 ievska1     1  10    0 1692K 1064K cpu/1    0:22 13.42% rlimit_cpu
+ 20754 ievska1     1  10    0 1692K 1064K cpu/2    0:26 12.59% rlimit_cpu
+ 20755 ievska1     1   1    0 1692K 1064K run      0:26 12.32% rlimit_cpu
+ 20734 kazbus      1   0    0 1692K 1064K run      0:23 11.03% rlimit_cpu
+  1140 root        1  59    0   27M   11M sleep  399:34  0.75% vmtoolsd
+ 20519 edvrep      1  59    0 5540K 3892K sleep    0:00  0.03% top
+ 20794 vilker3     1   8   17 5140K 3656K cpu/0    0:00  0.03% top
+ 20625 domand      1  59    0 5492K 3840K sleep    0:00  0.03% top
+ 20805 juspaz1     1  59    0 9096K 1688K sleep    0:00  0.03% less
+ 20594 vadkoz      1  59    0 5488K 3836K sleep    0:00  0.03% top
+ 20597 ievska1     1  59    0 5488K 3836K sleep    0:00  0.03% top
+ 20804 juspaz1     1  59    0 8748K 1592K sleep    0:00  0.03% man
+  1201 root        1  59    0   22M 6096K sleep    5:36  0.01% snmpd
+ 20321 kazbus      1  59    0   18M 4924K sleep    0:00  0.01% sshd
+ 20784 ignlun      1  59    0   10M 2836K sleep    0:00  0.01% bash
+ 18657 krirud      1  59    0   10M 2828K sleep    0:00  0.01% bash
+ 20736 juspaz1     1  49    0   10M 2736K sleep    0:00  0.01% bash
+ 20765 ignlun      1  59    0   18M 4924K sleep    0:00  0.01% sshd
+ 20365 juspaz1     1  59    0   19M 4960K sleep    0:00  0.01% sshd
+ 20323 kazbus      1  59    0   10M 2844K sleep    0:00  0.00% bash
+ 18922 matgri      1  59    0   10M 2840K sleep    0:00  0.00% bash
+ 19141 kamtum      1  59    0   18M 4924K sleep    0:00  0.00% sshd
+ 18912 matgri      1  59    0   18M 4924K sleep    0:00  0.00% sshd
+ 18654 krirud      1  59    0   18M 4940K sleep    0:00  0.00% sshd
+ 19142 kamtum      1  59    0   10M 2816K sleep    0:00  0.00% bash
+   445 root       36  59    0   18M 7464K sleep    1:51  0.00% nscd
+   508 root        1  59    0 4236K  920K sleep    0:54  0.00% ntpd
+

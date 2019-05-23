@@ -1,0 +1,10 @@
+#!/bin/sh
+if [ $# -eq 0 ] ;
+then
+    echo "Programa paleista be argumentu"
+    exit 1
+else
+    echo "Argumentu skaicius: $#"
+    echo "Argumentu sarasas: $*"
+    exit 0
+fi

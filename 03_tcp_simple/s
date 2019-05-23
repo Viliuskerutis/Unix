@@ -1,0 +1,7 @@
+#!/bin/sh
+
+
+rm tcp_server
+gcc -o tcp_server tcp_server.c -lxnet
+
+./tcp_server 13000

@@ -1,0 +1,7 @@
+#!/bin/sh
+var=1
+for i in $*
+do
+echo "$var: " $i
+var=$(( $var + 1 ))
+done

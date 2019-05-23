@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "komandineje eiluteje ivestu poziciniu argumentu kiekis: "
+echo $#
+echo "komandineje eiluteje ivesti poziciniai argumentai: "
+echo $*

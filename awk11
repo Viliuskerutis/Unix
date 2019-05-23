@@ -1,0 +1,3 @@
+BEGIN {print "Studentai kurių vardas yra Vilius: \n"  }
+{ eilnr=eilnr+1;  if ($5 == "Vilius") { print eilnr, $4, $5} }
+END {print "\n"}

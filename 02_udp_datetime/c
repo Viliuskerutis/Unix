@@ -1,0 +1,7 @@
+#!/bin/sh
+
+
+rm udp_client
+gcc -o udp_client udp_client.c -lxnet
+
+./udp_client 158.129.0.39 12345

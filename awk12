@@ -1,0 +1,3 @@
+BEGIN {print "Eilutes, kuriose yra IF 9/2 grupes studentai: \n"  }
+{ if ($3 == "9/2") { kiekis++; print $0; } }
+END { print "\n Atsakymas: ",  kiekis; }

@@ -1,0 +1,8 @@
+
+#!/bin/sh
+set `who am i`
+echo "Jusu prisijungimo vardas yra: " $1
+set `groups`
+echo "Jusu grupe yra: " $1
+set `id`
+echo "Jusu vartotojo numeris yra: " $1
